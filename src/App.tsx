@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './style.css';
+import NoImage from './components/NoImage';
 
 export default function App() {
   const [img, SetImg] = React.useState('');
@@ -13,7 +14,6 @@ export default function App() {
 
         <form action="#">
           <input
-            type="text"
             value={img}
             placeholder="cole a url da imagem aqui"
             onChange={(e) => SetImg(e.target.value)}
@@ -28,6 +28,7 @@ export default function App() {
         </form>
       </aside>
       <section>
+        {!img && <NoImage />}
         {img && <p id="tag">{tagname}</p>}
         <img src={img} alt="" />
       </section>

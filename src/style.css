@@ -17,12 +17,24 @@ body {
 
 main {
   width: 100%;
+  max-width: 1120px;
   height: 100vh;
 
   color: var(--font-black);
 
   display: flex;
   gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside {
+  background: rgba(204, 204, 204, 0.452);
+  width: 500px;
+  height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -40,6 +52,7 @@ input {
 form {
   display: flex;
   flex-direction: column;
+  width: max-content;
 }
 
 button {
@@ -54,6 +67,7 @@ button {
 
 section {
   position: relative;
+  content: '';
 }
 
 img {
@@ -71,4 +85,12 @@ img {
   top: 5rem;
   left: 1rem;
   width: fit-content;
+}
+
+
+@media (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
