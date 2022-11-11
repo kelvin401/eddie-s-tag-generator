@@ -2,10 +2,8 @@ import * as React from 'react';
 import './style.css';
 
 export default function App() {
-  const [img, SetImg] = React.useState(
-    'https://s2.glbimg.com/z2D4JVEVzuGj0noeF-4t-evruUY=/0x141:2047x1292/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/B/8/8EugYKQ5efPwDuqPcXrg/52232492084-9a52f1aa27-k.jpg'
-  );
-  const [tagname, SetTagName] = React.useState('politica');
+  const [img, SetImg] = React.useState('');
+  const [tagname, SetTagName] = React.useState('');
 
   return (
     <section className="showcase">
